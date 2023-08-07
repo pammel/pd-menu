@@ -1,7 +1,7 @@
 {
-  "name": "appaydin/pd-menu",
+  "name": "pammel/pd-menu",
   "description": "Symfony Simple Menu Bundle",
-  "homepage": "https://github.com/appaydin/pd-menu",
+  "homepage": "https://github.com/pammel/pd-menu",
   "type": "symfony-bundle",
   "license": "MIT",
   "keywords": [
@@ -14,10 +14,14 @@
     {
       "name": "Ramazan APAYDIN",
       "homepage": "https://github.com/appaydin"
+    },
+    {
+      "name": "Peter Ammel",
+      "homepage": "https://github.com/pammel"
     }
   ],
   "require": {
-    "php": ">=8.0.0",
+    "php": ">=8.0",
     "twig/twig": "*",
     "symfony/event-dispatcher": "*"
   },
