@@ -278,22 +278,22 @@ class Item implements ItemInterface
         return $this->parent ? $this->parent->getLevel() + 1 : 0;
     }
 
-    public function offsetExists($childId)
+    public function offsetExists($childId): bool
     {
         return isset($this->child[$childId]);
     }
 
-    public function offsetGet($childId)
+    public function offsetGet($childId): mixed
     {
         return $this->child[$childId];
     }
 
-    public function offsetSet($childId, $order)
+    public function offsetSet($childId, $order): void
     {
-        return $this->addChild($childId, $order);
+        $this->addChild($childId, $order);
     }
 
-    public function offsetUnset($childId)
+    public function offsetUnset($childId): void
     {
         if ($this->offsetExists($childId)) {
             unset($this->child[$childId]);
